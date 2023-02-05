@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico" />
+	<title>Foxy Foodie</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static/css/theme.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/" class="logo">Welcome to<strong> Foxy Foodie</strong></a>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+						</li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+						</header>
+						<div class="title">
+							<img src="static/images/IMG-0010.jpg"
+								style="width: 100px; height: 100px; margin-top: 1%; margin-bottom: 1%;">
+						</div>
+						<div class="title">
+							<h1>RECIPES</h1>
+						</div>
+						<div class="title">
+							<p>Best Matches Based On Your Ingredients</p>
+						</div>
+						<div class="title">
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- Section -->
+				<section>
+					<div class="posts">
+						{% for post in dict_out %}
+						<article>
+							<h3 style="color: #F56A6A; margin-left: 5px; margin-right: 5px;">{{post.name}}</h3>
+							<br>
+							<p><strong>Time:</strong> {{post.minutes}} minutes<br>
+								<strong>Ingredients:</strong> {{post.ingredients}}
+							</p>
+						</article>
+						{% endfor %}
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<!-- <div id="sidebar">
+			<div class="inner">
+
+				<section id="search" class="alt">
+					<form method="post" action="#">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section>
+
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Recipes</a></li>
+						<li><a href="generic.html">Profile</a></li>
+						<li>
+							<span class="opener">Favorites</span>
+							<ul>
+								<li><a href="#">Blueberry Muffins</a></li>
+								<li><a href="#">Shepherd's Pie</a></li>
+								<li><a href="#">Lasagna</a></li>
+								<li><a href="#">Banana Bread</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+
+
+			</div>
+		</div> -->
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/browser.min.js"></script>
+	<script src="static/js/breakpoints.min.js"></script>
+	<script src="static/js/util.js"></script>
+	<script src="static/js/main.js"></script>
+
+</body>
+
+</html>

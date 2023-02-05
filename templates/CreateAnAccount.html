@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico" />
+	<title>Foxy Foodie</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="static/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+
+				<form action="action_page.php" style="border:1px solid #ccc; background-color: #F56A6A;">
+					<div class="container">
+						<img src="static/images/IMG-0010.jpg" style="width: 100px; height: 100px; margin-top: 1%;">
+						<h1 style="margin-top: 1%;">Sign Up</h1>
+						<p style="margin-bottom: 2%;">Please fill in this form to create an account.</p>
+						<hr>
+						<div><label for="email" style="margin-top: 2%;"><b>Email:</b></label></div>
+						<div><input type="text" placeholder="email" name="email" required></div>
+
+						<div><label for="psw"><b>Password:</b></label></div>
+						<div><input type="password" placeholder="password" name="psw" required></div>
+
+					</div>
+
+					<div class="clearfix" style="margin-bottom: 2%; margin-top: 1%;">
+						<button type="button" class="cancelbtn">Cancel</button>
+						<button type="submit" class="signupbtn"><a href="/profileset">Sign Up</a></button>
+					</div>
+		</div>
+		</form>
+
+		</head>
+		<!-- Footer -->
+		<!-- <footer id="footer">
+						<span class="copyright">&copy; Foodie Design: <a href="http://html5up.net">Foodie</a>.</span>
+					</footer> -->
+
+		<script>
+			window.onload = function () { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function () { return false; }
+			window.onorientationchange = function () { document.body.scrollTop = 0; }
+		</script>
+</body>
+
+</html>
